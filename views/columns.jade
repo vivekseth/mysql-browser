@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  h1 Columns
+  for i in columns
+    p
+      a(href='test/#{i.Field}')= i.Field

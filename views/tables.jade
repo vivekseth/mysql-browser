@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  h1 Tables
+  for i in tables
+    p
+      a(href='/#{database}/#{i.table}')= i.table
